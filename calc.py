@@ -1,4 +1,4 @@
-# The math functions your tests need
+# Math functions
 def add(x, y):
     return x + y
 
@@ -13,7 +13,7 @@ def divide(x, y):
         return "Cannot divide by zero"
     return x / y
 
-# This part only runs when a HUMAN plays with the file, not the test robot
+# Interactive part for a human to use in the terminal
 if __name__ == "__main__":
     print("--- Simple Calculator ---")
     print("1. Add | 2. Subtract | 3. Multiply | 4. Divide")
