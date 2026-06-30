@@ -1,34 +1,4 @@
-# Math functions
-def add(x, y):
-    return x + y
+def power_of(base, exponent):
+    return base * exponent  # BUG: 2 to the power of 3 should be 8, but this returns 6!
 
-def subtract(x, y):
-    return x - y
-
-def multiply(x, y):
-    return x * y
-
-def divide(x, y):
-    if y == 0:
-        return "Cannot divide by zero"
-    return x / y
-
-# Interactive part for a human to use in the terminal
-if __name__ == "__main__":
-    print("--- Simple Calculator ---")
-    print("1. Add | 2. Subtract | 3. Multiply | 4. Divide")
-    
-    choice = input("Choose a number (1-4): ")
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
-
-    if choice == '1':
-        print(f"Result: {add(num1, num2)}")
-    elif choice == '2':
-        print(f"Result: {subtract(num1, num2)}")
-    elif choice == '3':
-        print(f"Result: {multiply(num1, num2)}")
-    elif choice == '4':
-        print(f"Result: {divide(num1, num2)}")
-    else:
-        print("Invalid Choice!")
+print("2 to the power of 3:", power_of(2, 3))
